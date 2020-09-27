@@ -1,0 +1,7 @@
+ro.product.brand=umidigi
+ro.product.name=A7_pro
+ro.product.device=A7_pro
+ro.build.product=A7_pro
+ro.treble.enabled=true
+fbe.metadata.wrappedkey=true
+vendor.gatekeeper.disable_spu=true
