@@ -1,13 +1,3 @@
-# Device path
-LOCAL_PATH := device/umidigi/A7_pro
-
-# Inherit from MTK COMMON MT676_
--include device/MTK/common_mt676_/BoardConfig.mk
-
-# Platform
-TARGET_BOARD_PLATFORM := mt6765
-##################3
-###################
 #
 # Copyright (C) 2020 The Android Open Source Project
 # Copyright (C) 2020 The TWRP Open Source Project
