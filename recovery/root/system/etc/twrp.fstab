@@ -4,16 +4,16 @@
 
 # Dynamic partition
 
-/system		    ext4	/dev/block/mapper/system      flags=backup=1;display="System ext4"
-/vendor             ext4        /dev/block/mapper/vendor      flags=backup=1;display="Vendor ext4"
-/product            ext4        /dev/block/mapper/product     flags=backup=1;display="Product ext4"
+#/system		    ext4	/dev/block/mapper/system      flags=backup=1;display="System ext4"
+#/vendor             ext4        /dev/block/mapper/vendor      flags=backup=1;display="Vendor ext4"
+#/product            ext4        /dev/block/mapper/product     flags=backup=1;display="Product ext4"
 
 # Core Partitions
 /md_udc		    emmc	/dev/block/platform/bootdevice/by-name/md_udc   flags=backup=1
 /metadata	    emmc	/dev/block/platform/bootdevice/by-name/metadata flags=backup=1
 
 # Common partition
-/data            ext4    /dev/block/platform/bootdevice/by-name/userdata           flags=fileencryption=aes-256-cts
+#/data            ext4    /dev/block/platform/bootdevice/by-name/userdata           flags=fileencryption=aes-256-xts
 /boot            emmc    /dev/block/platform/bootdevice/by-name/boot               flags=backup=1;display="Boot";flashimg=1
 /dtbo            emmc    /dev/block/platform/bootdevice/by-name/dtbo               flags=backup=1;display="Dtbo";flashimg=1
 /cache           ext4    /dev/block/platform/bootdevice/by-name/cache              flags=backup=1;wipeingui;wipeduringfactoryreset
