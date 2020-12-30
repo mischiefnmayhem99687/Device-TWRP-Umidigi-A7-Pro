@@ -25,6 +25,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # $(call inherit-product, vendor/pb/config/common.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
+# tzdata
+PRODUCT_PACKAGES_ENG += \
+    tzdata_twrp
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := UMIDIGI
 PRODUCT_DEVICE := A7_pro
