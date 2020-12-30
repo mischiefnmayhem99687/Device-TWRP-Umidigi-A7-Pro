@@ -22,7 +22,6 @@ on init
 
     mkdir /vendor/lib64 0700 root root
     mkdir /vendor/lib64/hw 0700 root root
-    symlink /vendor/manifest.xml /system_root/system/manifest.xml
     setprop crypto.ready 1
 
 on fs
@@ -55,13 +54,13 @@ service logd /sbin/logd
     disabled
     seclabel u:r:recovery:s0
 
-service gatekeeper-1-0 /vendor/bin/android.hardware.gatekeeper@1.0-service
+service gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
     user root
     group root
     disabled
     seclabel u:r:recovery:s0
 
-service keymaster-3-0 /vendor/bin/android.hardware.keymaster@4.0-service
+service keymaster-4-0 /vendor/bin/hw/android.hardware.keymaster@4.0-service.trustkernel
     user root
     group root
     disabled
